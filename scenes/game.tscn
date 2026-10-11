@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dwildigbhf10i"]
+
+[ext_resource type="PackedScene" uid="uid://bwo4kpttflqyd" path="res://scenes/usagi.tscn" id="1_uwrxv"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vse7m"]
+
+[node name="Game" type="Node2D" unique_id=1082279313]
+
+[node name="usagi" parent="." unique_id=814708079 instance=ExtResource("1_uwrxv")]
+position = Vector2(144, -8)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1526344753]
+position = Vector2(210, -113)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1078656874]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1878070305]
+position = Vector2(209.99997, -3)
+scale = Vector2(6.28, 4.079999)
+shape = SubResource("WorldBoundaryShape2D_vse7m")
